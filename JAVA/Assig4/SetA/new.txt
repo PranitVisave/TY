@@ -1,0 +1,6 @@
+sample.txt
+This is a Sample file.
+ok.
+Hello!
+This is a Sample file.
+ok.
