@@ -22,7 +22,7 @@ int get_lru() {
 int main() {
     	int i, j, pno1, p, page_fault = 0, flag, cnt = 0;;
     	float hr, mr;
-    	printf("\Demand Paging MRU\n");
+    	printf("\Demand Paging LRU\n");
     	printf("\n Enter No. of Frames: ");
     	scanf("%d", & n);
     	printf("\n Enter Length of Reference String: ");
