@@ -2,7 +2,7 @@
 
 
 
-//mfu 
+//lfu
 
 #include<stdio.h>
 
@@ -37,7 +37,7 @@ int free_fr()
 
 }
 
-int get_mfu()
+int get_lfu()
 {
     int max=0;
 
@@ -81,7 +81,7 @@ int main()
             page_fault++;
             j=free_fr();
             if (j==-1)
-                j=get_mfu();
+                j=get_lfu();
             frames[j].pno=pno1;
             frames[j].freq=1;
             flag=1;
