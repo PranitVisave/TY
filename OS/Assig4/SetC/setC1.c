@@ -39,13 +39,13 @@ int free_fr()
 
 int get_lfu() //try to add parameter of current page
 {
-    int max=0;
+    int min=0;
 
     for(i=0; i<n; i++)
 
-        if(frames[i].freq < frames[max].freq)
-            max=i;
-    return max;
+        if(frames[i].freq < frames[min].freq)
+            min=i;
+    return min;
 
 }
 
