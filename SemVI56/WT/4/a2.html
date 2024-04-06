@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript">
+	function sendRequest(){
+		var name = document.getElementById("name").value;
+		var message = document.getElementById("message");
+		if (name == " "){
+			message.innerHTML = "Stranger, Please tell your name!";
+		}
+		else{
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function(){
+				if (this.readyState == 4 && this.status == 200){
+					var response = this.responseText;
+					
+					if (response == "Hello Master!"){
+						document.getElementById("message").innserHTML = "Hello Master "+name+"!";
+					}
+					else{
+						document.getElementbyId("message").innserHTML = "Stanger "+name+"!";
+					}
+				}
+			};
+			xhr.open("GET","a2.php?name"+name);
+			xhr.send();
+		}
+	}
+</script>
+</head>
+<body>
+<h1>AJAX</h1>
+Enter Yoyr name : <input type="text" id="name" onkeyup="sendRequest()">
+<p id="message"></p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+<img id="img" src="img.jpg">
+</body>
+<script>
+	$(document).ready(function(){
+		$("#img").before("Text before image ");
+		$("#img").after("text after image");
+	});

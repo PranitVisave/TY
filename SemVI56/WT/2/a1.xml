@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="a1.css" ?>
+<a1>
+	<item>
+	<iname>Mango</iname>
+	<itpr>200</itpr>
+	<iqty>10</iqty>
+	</item>
+	
+	<item>
+	<iname>Apple</iname>
+	<itpr>100</itpr>
+	<iqty>20</iqty>
+	</item>
+	
+	<item>
+	<iname>Banana</iname>
+	<itpr>300</itpr>
+	<iqty>40</iqty>
+	</item>
+	
+	<item>
+	<iname>Berry</iname>
+	<itpr>300</itpr>
+	<iqty>40</iqty>
+	</item>
+	
+	<item>
+	<iname>Grape</iname>
+	<itpr>50</itpr>
+	<iqty>100</iqty>
+	</item>
+	
+</a1>
